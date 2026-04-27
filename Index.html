@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+  =========================================================
+  WEBSITE SETUP & CUSTOMIZATION GUIDE
+
+  1. CHANGE TEXT / BRANDING:
+     - Replace "FixPro Handyman" with your business name
+     - Update phone/email in Contact section
+     - Edit services & testimonials
+
+  2. IMAGES:
+     - Replace Unsplash URLs with your own images
+     - Recommended: Local project photos for higher conversions
+
+  3. GOOGLE ANALYTICS:
+     - Paste your tracking script right before </head>
+
+  4. CONTACT FORM:
+     - Replace form action with Formspree endpoint:
+       https://formspree.io/f/your-id
+
+  5. WHATSAPP BUTTON:
+     - Replace # with your link:
+       https://wa.me/your-number
+
+  6. BEFORE SELLING:
+     - Add real testimonials
+     - Connect form backend
+     - Replace placeholder ads with affiliate offers
+
+  =========================================================
+  -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional handyman services for homes and offices. Fast, reliable, and affordable repairs.">
+  <title>FixPro Handyman | Fast & Reliable Home Repairs</title>
+
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --dark: #222;
+      --light: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: var(--primary);
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0d6efd;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .services {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: var(--light);
+      padding: 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonials {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .ads {
+      background: #eee;
+      text-align: center;
+      padding: 30px;
+      margin: 40px 0;
+      border-radius: 8px;
+    }
+
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity:0; transform: translateY(20px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>FixPro</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Reliable Handyman Services You Can Trust</h2>
+    <p>Fast, affordable, and professional home repairs</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We provide top-quality handyman services for homeowners and businesses. From small repairs to full maintenance jobs, our experienced team ensures everything is done right the first time.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid services">
+    <div class="card">🔧 Plumbing Repairs</div>
+    <div class="card">⚡ Electrical Fixes</div>
+    <div class="card">🪚 Carpentry Work</div>
+    <div class="card">🎨 Painting Services</div>
+  </div>
+</section>
+
+<section class="ads">
+  <h3>Sponsored Offer</h3>
+  <p>Promote tools, affiliate products, or local ads here.</p>
+  <a href="#" class="btn">View Deal</a>
+</section>
+
+<section>
+  <h2>What Customers Say</h2>
+  <div class="grid testimonials">
+    <div class="card">"Amazing service! Highly recommend." – Sarah</div>
+    <div class="card">"Quick and professional work." – James</div>
+    <div class="card">"Affordable and reliable." – Mike</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm" action="#">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+    <p id="formMsg"></p>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> FixPro Handyman</p>
+  <p>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Service</a>
+  </p>
+</footer>
+
+<a href="#" class="floating-btn">💬</a>
+
+<script>
+  // Auto Year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Form Mock Submission
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const msg = document.getElementById("formMsg");
+    msg.style.color = "green";
+    msg.textContent = "Message sent successfully!";
+  });
+</script>
+
+</body>
+</html>
